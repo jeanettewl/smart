@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Mockup | Search Basreng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f5f5f5; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .shopee-orange { background-color: #ee4d2d; }
+        .shopee-text-orange { color: #ee4d2d; }
+        .card-shadow { box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+    <nav class="shopee-orange text-white text-[11px] py-1 border-b border-white/10 hidden md:block">
+        <div class="container mx-auto flex justify-between px-4">
+            <div class="flex gap-4">
+                <a href="#">Go to Seller Center</a>
+                <a href="#">Start Selling</a>
+                <a href="#">Download</a>
+                <span>Follow us on [f] [ig]</span>
+            </div>
+            <div class="flex gap-4 items-center">
+                <span>Notifications</span>
+                <span>Help</span>
+                <span>English ▾</span>
+                <span class="font-bold">Sign Up</span>
+                <span class="font-bold border-l pl-3">Login</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="shopee-orange pb-6 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center">
+            <div class="mr-8 cursor-pointer" onclick="location.href='index.html'">
+                <h1 class="text-white text-4xl font-bold tracking-tighter italic">Shopee</h1>
+            </div>
+
+            <div class="flex-grow max-w-4xl relative">
+                <div class="bg-white p-1 rounded-sm flex shadow-md">
+                    <input type="text" value="basreng" class="w-full px-4 py-2 outline-none text-sm text-gray-800">
+                    <button class="bg-[#ee4d2d] px-6 py-2 rounded-sm text-white hover:opacity-90">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                </div>
+                <div class="flex gap-4 text-white text-[11px] mt-2 font-light opacity-90 overflow-hidden whitespace-nowrap">
+                    <a href="#">Celana Pants</a>
+                    <a href="#">Celana Panjang Denim</a>
+                    <a href="#">Headset Bluetooth</a>
+                    <a href="#">Basreng Pedas</a>
+                </div>
+            </div>
+
+            <div class="ml-12 cursor-pointer relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <span class="absolute -top-1 -right-2 bg-white shopee-text-orange text-[10px] px-1.5 rounded-full font-bold">3</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 mt-6 flex gap-6">
+        
+        <aside class="w-48 flex-shrink-0 hidden lg:block">
+            <div class="flex items-center gap-2 font-bold text-sm mb-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+                SEARCH FILTER
+            </div>
+            
+            <div class="text-sm space-y-6">
+                <div>
+                    <h3 class="font-medium mb-3">Shipped From</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> Jabodetabek</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> DKI Jakarta</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> Jawa Barat</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> Jawa Timur</label>
+                    </div>
+                </div>
+                <div class="border-t pt-4">
+                    <h3 class="font-medium mb-3">Shop Type</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> Mall</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> Star+</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-[#ee4d2d]"> Star</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="flex-grow">
+            
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="text-gray-500 text-xs uppercase tracking-widest">SHOPS RELATED TO "<span class="shopee-text-orange font-bold">BASRENG</span>"</h2>
+                <a href="#" class="shopee-text-orange text-xs">More Shops ></a>
+            </div>
+
+            <div class="bg-white p-6 rounded-sm card-shadow flex items-center gap-8 mb-6 border border-transparent hover:border-gray-200 transition">
+                <div class="flex items-center gap-4 border-r pr-8 h-16 w-1/3">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full border relative flex-shrink-0">
+                        <img src="https://picsum.photos/id/102/100/100" class="rounded-full w-full h-full object-cover">
+                        <div class="absolute bottom-0 right-0 w-6 h-6 border rounded-full bg-white flex items-center justify-center text-[10px]">🔥</div>
+                    </div>
+                    <div class="truncate">
+                        <h3 class="font-medium">Basreng Berkah</h3>
+                        <p class="text-[11px] text-gray-400">gelabelll_</p>
+                        <p class="text-[11px] mt-1"><span class="shopee-text-orange">131</span> Followers</p>
+                    </div>
+                </div>
+                <div class="flex-grow flex justify-around text-center">
+                    <div><div class="text-[#ee4d2d] font-medium">18</div><div class="text-[10px] text-gray-400">Products</div></div>
+                    <div><div class="text-[#ee4d2d] font-medium">4.8</div><div class="text-[10px] text-gray-400">Ratings</div></div>
+                    <div><div class="text-[#ee4d2d] font-medium">0%</div><div class="text-[10px] text-gray-400">Response Rate</div></div>
+                </div>
+            </div>
+
+            <div class="bg-[#ededed] p-3 rounded-sm flex items-center justify-between text-sm text-gray-600 mb-4">
+                <div class="flex gap-2">
+                    <span class="py-1.5">Sort by</span>
+                    <button class="bg-[#ee4d2d] text-white px-5 py-1.5 rounded-sm shadow-sm">Relevance</button>
+                    <button class="bg-white px-5 py-1.5 rounded-sm hover:bg-gray-50">Latest</button>
+                    <button class="bg-white px-5 py-1.5 rounded-sm hover:bg-gray-50">Top Sales</button>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span><span class="shopee-text-orange">1</span>/17</span>
+                    <button class="bg-white px-3 py-1 border shadow-sm cursor-not-allowed text-gray-300"><</button>
+                    <button class="bg-white px-3 py-1 border shadow-sm">></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                
+                <a href="detail.html" class="bg-white card-shadow hover:translate-y-[-2px] transition-all border border-transparent hover:border-[#ee4d2d] group">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://picsum.photos/id/292/400/400" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 bg-yellow-400 text-[10px] px-1 font-bold">11% OFF</div>
+                        <div class="absolute bottom-0 left-0 bg-[#ee4d2d] text-white text-[9px] px-1 py-0.5">MALL</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 mb-2">BASRENG DAUN JERUK 1KG / Basreng pedas bumbu melimpah</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="shopee-text-orange text-[10px]">Rp</span>
+                            <span class="shopee-text-orange text-lg">39.999</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 text-[10px] text-gray-400">
+                            <span class="text-yellow-500 font-bold">★ 4.5</span>
+                            <span>74RB terjual</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detail.html" class="bg-white card-shadow hover:translate-y-[-2px] transition border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative aspect-square">
+                        <img src="https://picsum.photos/id/225/400/400" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[9px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2 text-xs">
+                        <h3 class="line-clamp-2 h-8 mb-2">basreng stik setengah kg / 500 gr pedas asin gurih</h3>
+                        <div class="shopee-text-orange text-lg">Rp33.000</div>
+                        <div class="flex items-center justify-between mt-2 text-[10px] text-gray-400">
+                            <span>★ 4.8</span>
+                            <span>Banjarmasin</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detail.html" class="bg-white card-shadow hover:translate-y-[-2px] transition border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative aspect-square">
+                        <img src="https://picsum.photos/id/312/400/400" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-2 text-xs">
+                        <h3 class="line-clamp-2 h-8 mb-2">Basreng Viral 1KG / BUMBU MELIMPAH Daun Jeruk</h3>
+                        <div class="shopee-text-orange text-lg">Rp19.500</div>
+                        <div class="flex items-center justify-between mt-2 text-[10px] text-gray-400">
+                            <span>★ 4.8</span>
+                            <span>Kab. Bandung</span>
+                        </div>
+                    </div>
+                </a>
+
+                </div>
+        </div>
+    </main>
+
+</body>
+</html>

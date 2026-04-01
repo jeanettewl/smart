@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk Basreng | Shopee Mockup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f5f5f5; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .shopee-orange { background-color: #ee4d2d; }
+        .shopee-text-orange { color: #ee4d2d; }
+        .shopee-bg-light-orange { background-color: rgba(238, 77, 45, 0.08); }
+        .shopee-border-orange { border: 1px solid #ee4d2d; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .variant-btn.active { border-color: #ee4d2d; border-width: 2px; position: relative; }
+        .variant-btn.active .checkmark { display: block; }
+    </style>
+</head>
+<body>
+
+    <header class="shopee-orange py-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <h1 class="text-white text-2xl font-bold italic cursor-pointer">SMart</h1>
+            <div class="flex-grow max-w-2xl mx-10 bg-white p-1 rounded-sm flex items-center">
+                <input type="text" placeholder="Cari di toko ini..." class="w-full px-4 py-1 text-sm outline-none">
+                <button class="shopee-orange px-4 py-1.5 rounded-sm text-white text-xs">Cari</button>
+            </div>
+            <div class="text-white relative cursor-pointer">
+                🛒 <span class="absolute -top-2 -right-2 bg-white shopee-text-orange text-[10px] px-1 rounded-full font-bold">3</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 mt-5 pb-20">
+        <nav class="text-[13px] text-gray-600 mb-5 flex gap-2 items-center overflow-hidden whitespace-nowrap">
+            <a href="#" class="text-blue-800 hover:underline">Shopee</a> <span>&gt;</span>
+            <a href="#" class="text-blue-800 hover:underline">Food & Beverages</a> <span>&gt;</span>
+            <a href="#" class="text-blue-800 hover:underline">Snacks</a> <span>&gt;</span>
+            <span class="text-gray-400 truncate">BASRENG DAUN JERUK 1KG / Basreng pedas daun jeruk isi 1kg</span>
+        </nav>
+
+        <div class="bg-white p-5 rounded-sm shadow-sm flex flex-col md:flex-row gap-8 mb-6">
+            <div class="md:w-[450px] flex-shrink-0">
+                <div class="relative group">
+                    <div id="imageSlider" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide bg-gray-50 aspect-square">
+                        <div class="snap-center shrink-0 w-full h-full"><img src="sukro.jpeg" class="w-full h-full object-cover"></div>
+                        <div class="snap-center shrink-0 w-full h-full"><img src="sukro1.jpeg" class="w-full h-full object-cover"></div>
+                        <div class="snap-center shrink-0 w-full h-full"><img src="sukro2.jpeg" class="w-full h-full object-cover"></div>
+                    </div>
+                    <button onclick="scrollSlider(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/20 text-white p-3 hover:bg-black/40 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button onclick="scrollSlider(1)" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/20 text-white p-3 hover:bg-black/40 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+                <div class="flex gap-2 mt-3 overflow-x-auto scrollbar-hide">
+                    <div onclick="goToSlide(0)" class="w-20 h-20 border-2 border-[#ee4d2d] cursor-pointer"><img src="https://picsum.photos/id/292/100/100" class="w-full h-full object-cover"></div>
+                    <div onclick="goToSlide(1)" class="w-20 h-20 border border-gray-200 cursor-pointer"><img src="https://picsum.photos/id/225/100/100" class="w-full h-full object-cover"></div>
+                    <div onclick="goToSlide(2)" class="w-20 h-20 border border-gray-200 cursor-pointer"><img src="https://picsum.photos/id/312/100/100" class="w-full h-full object-cover"></div>
+                </div>
+            </div>
+
+            <div class="flex-grow">
+                <h2 class="text-xl font-medium mb-3">
+                    <span class="shopee-orange text-white text-[10px] px-1 py-0.5 rounded-sm mr-2 font-bold">Star+</span>
+                    Basreng Stik Pedas
+                </h2>
+
+                <div class="flex items-center gap-4 text-sm mb-4">
+                    <div class="flex items-center gap-1 border-r pr-4">
+                        <span class="shopee-text-orange underline font-bold">4.8</span>
+                        <div class="text-yellow-400 text-xs">★★★★★</div>
+                    </div>
+              
+                    <div class="text-gray-500"><span class="text-black font-medium">1</span> Sold</div>
+                </div>
+
+                <div class="bg-gray-50 p-4 mb-6 flex items-center gap-3">
+                    <span class="shopee-text-orange text-3xl font-medium">Rp3.000</span>
+                    <span class="text-gray-400 line-through text-sm">Rp4.000</span>
+                    <span class="shopee-orange text-white text-[10px] font-bold px-1 rounded-sm">-11%</span>
+                </div>
+
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-start">
+                        <span class="w-24 text-gray-500 pt-2">Rasa</span>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 flex-grow">
+                            <button onclick="selectVariant(this)" class="variant-btn border-2 border-[#ee4d2d] p-2 flex items-center gap-2 text-[11px] bg-white relative active">
+                                <img src="https://picsum.photos/id/225/30/30" class="w-6 h-6 object-cover"> 
+                                <span>Basreng Pedas 1KG</span>
+                                <div class="checkmark absolute bottom-0 right-0 bg-[#ee4d2d] text-white text-[8px] px-1">✓</div>
+                            </button>
+                            <button onclick="selectVariant(this)" class="variant-btn border p-2 flex items-center gap-2 hover:border-[#ee4d2d] transition text-[11px] bg-white relative">
+                                <img src="https://picsum.photos/id/292/30/30" class="w-6 h-6 object-cover"> 
+                                <span>Basreng Ori 1KG</span>
+                                <div class="checkmark hidden absolute bottom-0 right-0 bg-[#ee4d2d] text-white text-[8px] px-1">✓</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-24 text-gray-500">Kuantitas</span>
+                        <div class="flex items-center border">
+                            <button onclick="changeQty(-1)" class="px-3 py-1 border-r hover:bg-gray-100 text-lg">-</button>
+                            <input type="text" id="qtyInput" value="1" class="w-12 text-center outline-none text-sm">
+                            <button onclick="changeQty(1)" class="px-3 py-1 border-l hover:bg-gray-100 text-lg">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 mt-8">
+                    <button class="shopee-bg-light-orange shopee-border-orange shopee-text-orange px-8 py-3 rounded-sm flex items-center gap-2">🛒 Masukkan Keranjang</button>
+                    <button class="shopee-orange text-white px-12 py-3 rounded-sm shadow-sm">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-sm shadow-sm">
+            <h3 class="text-lg uppercase text-gray-600 mb-6">Penilaian Produk</h3>
+            
+            <div class="bg-gray-50 p-5 rounded-md mb-10 border border-dashed border-gray-300">
+                <p class="text-sm font-bold mb-3 text-gray-700">Berikan ulasan Anda:</p>
+                <div class="flex flex-col md:flex-row gap-3">
+                    <textarea id="commentInput" placeholder="Ceritakan kepuasan Anda tentang produk ini..." class="flex-grow p-3 text-sm border rounded-sm outline-none focus:border-orange-500 h-24 shadow-sm"></textarea>
+                    <button onclick="addComment()" class="shopee-orange text-white px-10 rounded-sm font-bold hover:brightness-110 transition h-12 md:h-24">Kirim Ulasan</button>
+                </div>
+            </div>
+
+            <div id="commentList" class="space-y-8">
+             
+                </div>
+        </div>
+    </main>
+
+    <script>
+        // Fungsi Slider Foto
+        const slider = document.getElementById('imageSlider');
+        function scrollSlider(direction) {
+            slider.scrollBy({ left: direction * slider.clientWidth, behavior: 'smooth' });
+        }
+        function goToSlide(index) {
+            slider.scrollTo({ left: index * slider.clientWidth, behavior: 'smooth' });
+        }
+
+        // Fungsi Pilih Varian
+        function selectVariant(element) {
+            document.querySelectorAll('.variant-btn').forEach(btn => {
+                btn.classList.remove('active', 'border-2', 'border-[#ee4d2d]');
+                btn.classList.add('border');
+                btn.querySelector('.checkmark').classList.add('hidden');
+            });
+            element.classList.add('active', 'border-2', 'border-[#ee4d2d]');
+            element.classList.remove('border');
+            element.querySelector('.checkmark').classList.remove('hidden');
+        }
+
+        // Fungsi Quantity
+        function changeQty(amt) {
+            const input = document.getElementById('qtyInput');
+            let val = parseInt(input.value) + amt;
+            input.value = val < 1 ? 1 : val;
+        }
+
+        // FUNGSI TAMBAH KOMENTAR DINAMIS
+        function addComment() {
+            const input = document.getElementById('commentInput');
+            const list = document.getElementById('commentList');
+            
+            if (input.value.trim() === "") {
+                alert("Tuliskan sesuatu dulu ya sebelum mengirim!");
+                return;
+            }
+
+            const now = new Date().toISOString().slice(0, 16).replace('T', ' ');
+            
+            const newCommentHTML = `
+                <div class="flex gap-4 border-b pb-8 bg-orange-50/30 p-2 rounded-sm transition-all duration-500">
+                    <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center shrink-0 font-bold text-white shadow-sm">
+                        SA
+                    </div>
+                    <div class="text-[13px]">
+                        <p class="font-medium text-gray-800">Saya_User</p>
+                        <div class="text-yellow-400 my-1.5 text-[10px]">★★★★★</div>
+                        <p class="text-gray-400 mb-3">${now} | Variasi: Basreng Pedas 1KG</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">${input.value}</p>
+                        <div class="mt-2 inline-block bg-gray-100 px-2 py-1 rounded text-[10px] text-gray-500 italic">Baru saja dikirim</div>
+                    </div>
+                </div>
+            `;
+
+            // Tambahkan komentar ke bagian atas list
+            list.insertAdjacentHTML('afterbegin', newCommentHTML);
+            
+            // Bersihkan input
+            input.value = "";
+            input.focus();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Basreng Terlengkap - Cek Harga Terupdate | Smart Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f5f5f5; font-family: sans-serif; }
+        .shopee-orange { background-color: #ee4d2d; }
+        .shopee-text-orange { color: #ee4d2d; }
+        .border-shopee { border: 1px solid #ee4d2d; }
+        .filter-scroll::-webkit-scrollbar { width: 4px; }
+        .filter-scroll::-webkit-scrollbar-thumb { background: #dbdbdb; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <header class="shopee-orange pb-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center py-4 gap-8">
+            <h1 class="text-white text-3xl font-bold tracking-tighter cursor-pointer" onclick="location.reload()">Smart</h1>
+            <div class="flex-grow bg-white p-1 rounded-sm flex items-center shadow-sm">
+                <input type="text" id="searchInput" placeholder="Cari produk..." class="w-full px-4 py-1.5 outline-none text-sm">
+                <button onclick="performSearch()" class="shopee-orange px-5 py-2 rounded-sm text-white hover:brightness-110 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 mt-6 flex gap-6">
+        
+        <aside id="sidebarContent" class="w-48 flex-shrink-0 text-sm hidden md:hidden">
+            <div class="flex items-center gap-2 font-bold mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" /></svg>
+                FILTER PENCARIAN
+            </div>
+            <div class="mb-6">
+                <h3 class="mb-3">Dikirim Dari</h3>
+                <div class="flex flex-col gap-2">
+                    <label class="flex items-center gap-2"><input type="checkbox"> Jabodetabek</label>
+                    <label class="flex items-center gap-2"><input type="checkbox"> DKI Jakarta</label>
+                    <span class="shopee-text-orange cursor-pointer text-xs">Lainnya ▾</span>
+                </div>
+            </div>
+            <button class="shopee-orange w-full text-white py-2 rounded-sm text-xs font-bold uppercase">Hapus Semua</button>
+        </aside>
+
+        <div id="mainResults" class="flex-grow hidden">
+            
+            <div class="bg-white p-4 rounded-sm shadow-sm mb-4 border-l-4 border-[#ee4d2d]">
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 bg-gray-200 rounded-full overflow-hidden border">
+                        <img src="https://picsum.photos/id/102/100/100" alt="Shop">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="font-bold text-lg">Basreng Berkah Official</h2>
+                        <p class="text-xs text-gray-500">Aktif 5 menit yang lalu | Kota Bandung</p>
+                    </div>
+                    <button class="border border-[#ee4d2d] shopee-text-orange px-6 py-1.5 rounded-sm text-sm font-medium">Kunjungi Toko</button>
+                </div>
+            </div>
+
+            <div class="bg-[#ededed] p-3 flex items-center justify-between text-sm rounded-sm mb-4 text-gray-600">
+                <div class="flex gap-4 items-center">
+                    <span>Urutkan:</span>
+                    <button class="bg-white shopee-text-orange px-4 py-1.5 rounded-sm shadow-sm border-shopee">Terkait</button>
+                    <button class="bg-white px-4 py-1.5 rounded-sm hover:bg-gray-50">Terbaru</button>
+                    <button class="bg-white px-4 py-1.5 rounded-sm hover:bg-gray-50">Terlaris</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]" onclick="location.href='detail.html'">
+                    <div class="relative">
+                        <img src="keripikkaca.png" alt="Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-yellow-400 text-[10px] px-1 font-bold">11% OFF</div>
+                        <div class="absolute bottom-0 left-0 bg-[#ee4d2d] text-white text-[9px] px-1 py-0.5">MALL</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">KERIPIK KACA 1KG</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp35.000</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.5</span>
+                            <span class="border-l pl-1">74,2RB terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative">
+                        <img src="makaroni.png" alt="Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[10px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">Makaroni Pedas 500gr Murah</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp18.000</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.8</span>
+                            <span class="border-l pl-1">2RB+ terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative">
+                        <img src="basreng.png" alt="Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[10px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">Basreng Stik PEDAS Daun Jeruk 500gr Murah</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp20.000</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.8</span>
+                            <span class="border-l pl-1">1RB+ terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative">
+                        <img src="kerkac.jpeg""Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[10px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">Keripik Kaca 500gr Murah</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp15.500</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.8</span>
+                            <span class="border-l pl-1">100 terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative">
+                        <img src="makaron.jpeg" alt="Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[10px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">Makaroni PEDAS Daun Jeruk 500gr Murah</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp17.000</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.3</span>
+                            <span class="border-l pl-1">250 terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]">
+                    <div class="relative">
+                        <img src="basreng1.jpeg" alt="Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[10px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">Basreng Stik PEDAS</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp19.500</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.5</span>
+                            <span class="border-l pl-1">150 terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-sm shadow-sm hover:shadow-md transition cursor-pointer border border-transparent hover:border-[#ee4d2d]" onclick="location.href='detail.html'">
+                    <div class="relative">
+                        <img src="https://picsum.photos/id/225/200/200" alt="Product" class="w-full h-44 object-cover">
+                        <div class="absolute top-0 left-0 bg-[#ff5722] text-white text-[10px] px-1">Star+</div>
+                    </div>
+                    <div class="p-2">
+                        <h3 class="text-xs line-clamp-2 h-8 leading-4 mb-1">Basreng Stik Pedas</h3>
+                        <div class="shopee-text-orange text-lg font-bold">Rp3.000</div>
+                        <div class="flex items-center gap-1 mt-2 text-[10px] text-gray-500">
+                            <span class="text-yellow-500">★ 4.8</span>
+                            <span class="border-l pl-1">1 terjual</span>
+                        </div>
+                    </div>
+                </div>
+
+
+        <div id="placeholderText" class="w-full flex flex-col items-center justify-center py-20 text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-4 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <p>Ketik "produk yang dicari" dan tekan tombol cari untuk melihat hasil.</p>
+        </div>
+    </main>
+
+    <script>
+        function performSearch() {
+            const input = document.getElementById('searchInput').value;
+            
+            if (input.toLowerCase().includes('cemilan')) {
+                // Sembunyikan placeholder
+                document.getElementById('placeholderText').classList.add('hidden');
+                
+                // Munculkan Sidebar (hapus hidden dan md:hidden)
+                const sidebar = document.getElementById('sidebarContent');
+                sidebar.classList.remove('hidden', 'md:hidden');
+                sidebar.classList.add('md:block');
+                
+                // Munculkan Hasil Produk
+                document.getElementById('mainResults').classList.remove('hidden');
+            } else {
+                alert('Silahkan ketik "basreng" untuk simulasi ini.');
+            }
+        }
+
+        // Support tekan 'Enter' di keyboard
+        document.getElementById('searchInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>
